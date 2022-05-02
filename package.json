@@ -1,7 +1,19 @@
 {
-  "name": "react-map-geocoder",
+  "name": "react-mapbox-deck-gl-geocoder",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "14"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    ".next/cache"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "git add . && git commit -m Build && git push && git push heroku && heroku logs --tail --remote heroku"
+  },
   "dependencies": {
     "deck.gl": "^8.3.10",
     "mapbox": "^1.0.0-beta10",
@@ -11,10 +23,6 @@
     "react-map-gl": "^5.2.10",
     "react-scripts": "4.0.1",
     "viewport-mercator-project": "^7.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
