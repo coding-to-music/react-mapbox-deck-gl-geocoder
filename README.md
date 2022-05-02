@@ -29,7 +29,7 @@ https://github.com/anselbrandt/react-map-geocoder
 ## Environment Values
 
 ```java
-
+REACT_APP_MAPBOX_ACCESS_TOKEN=""
 ```
 
 # Mapbox Geocoder with react-map-gl
